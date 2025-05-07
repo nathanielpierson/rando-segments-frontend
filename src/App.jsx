@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import { RunsPage } from './RunsPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
       <p>p</p>
+      <RunsPage />
     </div>
   )
 }
