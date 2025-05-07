@@ -8,8 +8,7 @@ return(
     <p>runs index</p>
     {sortedRuns.map((run) => (
 <div key={run.id}>
-  <p>run id{run.id}</p>
-  <p>level id{run.level_id}</p>
+  <p>level {run.level.name}</p>
   <p>time {run.minutes}:{run.seconds > 9 ? run.seconds : "0" + run.seconds}.{run.milliseconds}</p>
 </div>
 ))}
