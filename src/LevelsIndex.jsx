@@ -1,9 +1,9 @@
 export function LevelsIndex( {levels} ) {
   console.log(levels);
   console.log("in LevelsIndex")
-
-  h
-  
+  function handleClick() {
+    console.log("handleClick run")
+  }
   return (
     <div>
       <h1>All Levels ({levels.length} total)</h1>
