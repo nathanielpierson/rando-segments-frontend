@@ -4,6 +4,7 @@ export function LevelsIndex( {levels} ) {
   function handleClick() {
     console.log("handleClick run")
   }
+  const sortedLevels = levels.toSorted((a, b) => a.official_course_number - b.official_course_number);
   return (
     <div>
       <h1>All Levels ({levels.length} total)</h1>
@@ -13,11 +14,12 @@ export function LevelsIndex( {levels} ) {
     >
       Update All
     </button>
-      {levels.map((level) => (
+      {sortedLevels.map((level) => (
         <div key={level.id}>
+          <h4>{level.official_course_number}</h4>
           <h3>{level.name}</h3>
           <img src={level.image_url || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuX96Zx4GsEJeHhzhhs1jEG6XPuCF4LoxugA&s"}
-          style={{ height: "300px", width: "420px" }}
+          style={{ height: "200px", width: "200px" }}
           className="hover:opacity-70 transition-opacity duration-300"
           alt={level.name} />
           {/* ternary operators are on this to add 0s if seconds or milliseconds are single digit */}
