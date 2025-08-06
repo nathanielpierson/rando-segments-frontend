@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from "react";
 
-export function TrackerBasic() {
+export function TrackerNonstopOneTwenty() {
   const [levels, setLevels] = useState([]);
 
   const trackerIndex = () => {
@@ -45,7 +45,7 @@ export function TrackerBasic() {
             <label
               htmlFor={`checkbox-${level.id}`}
               className="ms-2 text-sm font-medium text-gray-900">
-              Visi
+              Visited lvl
             </label>
           </div>
         </div>

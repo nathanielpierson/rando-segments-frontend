@@ -1,4 +1,4 @@
-import { TrackerBasic } from "./TrackerBasic"
+import { TrackerBasic } from "./TrackerNonstopOneTwenty"
 
 export function TrackerPage() {
   return (
