@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export function TrackerNonstopOneTwenty() {
   const [levels, setLevels] = useState([]);
-  const [extras, setExtras] = useState(false); // useState instead of var
+  const [extras, setExtras] = useState(false);
 
   const trackerIndex = () => {
     axios.get("http://localhost:3000/levels.json").then((response) => {
