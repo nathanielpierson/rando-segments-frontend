@@ -4,6 +4,7 @@ import { RunsPage } from './RunsPage'
 import { LevelsPage } from './LevelsPage'
 import { TrackerNonstopOneTwenty} from './TrackerNonstopOneTwenty'
 import { TrackerSeventy } from './TrackerSeventy'
+import { ImageProcessorPage } from './ImageProcessorPage'
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -20,6 +21,7 @@ function App() {
       <Route path="/levels" element={<LevelsPage />} />
       <Route path="/trackers/nonstop-120" element={<TrackerNonstopOneTwenty />} />
       <Route path="/trackers-70" element={<TrackerSeventy />} />
+      <Route path="/image-processor" element={<ImageProcessorPage />} />
       </Routes>
       </BrowserRouter>
     </div>
