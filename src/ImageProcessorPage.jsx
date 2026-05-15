@@ -15,9 +15,9 @@ export function ImageProcessorPage() {
     <div>
       {frames.map((frame) => {
         return (
-          <div key={key}>
+          <div key={frame.id}>
             <p>level: {frame.level.name}</p>
-            <img src={`${base}${frame.preview_path}`} alt="" />
+            <img src={frame.image_path} alt="" />
             <p>time: {frame.time}</p>
             <p>frame_type: {frame.frame_type}</p>
           </div>
